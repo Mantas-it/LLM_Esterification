@@ -89,8 +89,8 @@ if __name__ == '__main__':
     logging.debug('This will get logged')
     
 
-    model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-large")
-    tokenizer = AutoTokenizer.from_pretrained('google/flan-t5-large')
+    model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base")
+    tokenizer = AutoTokenizer.from_pretrained('google/flan-t5-base')
     model.config.max_length = 256
 
     random.seed(42)
